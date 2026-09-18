@@ -1,0 +1,32 @@
+```css
+body {
+    background-color: lightgray !important;
+}
+
+.appointment-title {
+    color: red !important;
+    font-size: 40px !important;
+}
+
+.appointment-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.appointment-table {
+    width: 100%;
+    text-align: center;
+}
+
+.appointment-table th {
+    background-color: blue !important;
+    color: white !important;
+    padding: 15px;
+}
+
+.appointment-table td {
+    padding: 15px;
+}
+```

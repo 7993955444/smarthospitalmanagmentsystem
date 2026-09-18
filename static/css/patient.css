@@ -1,0 +1,83 @@
+patient-page {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+/* Page heading */
+.patient-page h2 {
+    text-align: center;
+    color: #222;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Table */
+.patient-page table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark header */
+.patient-page table thead th {
+    background-color: #212529;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Table data */
+.patient-page table tbody td {
+    background-color: white;
+    color: #333;
+    padding: 13px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Hover */
+.patient-page table tbody tr:hover td {
+    background-color: #f2f6fc;
+}
+
+/* Red Delete button */
+.patient-page .delete-btn {
+    display: inline-block;
+    background-color: #dc3545 !important;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+/* Delete hover */
+.patient-page .delete-btn:hover {
+    background-color: #b02a37 !important;
+    color: white !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .patient-page {
+        padding: 15px;
+    }
+
+    .patient-page h2 {
+        font-size: 24px;
+    }
+
+    .patient-page table {
+        font-size: 13px;
+    }
+
+    .patient-page table th,
+    .patient-page table td {
+        padding: 9px;
+    }
+}

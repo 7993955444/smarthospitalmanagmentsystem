@@ -1,0 +1,39 @@
+{% extends 'navigation_bar.html' %}
+
+{% block body %}
+
+<div class="container" style="margin-top:50px;">
+
+    <h2 align="center">View Doctors</h2>
+
+    <table class="table table-bordered table-hover mt-4" id="example">
+        <thead class="table-dark">
+            <tr>
+                <th>Doctor ID</th>
+                <th>name</th>
+                <th>mobile</th>
+                <th>speciality</th>
+                <th>age</th>
+                <th>gender</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for i in doc %}
+            <tr>
+                <td>{{ i.id }}</td>
+                <td>{{ i.name }}</td>
+                <td>{{ i.mobile }}</td>
+                <td>{{ i.speciality}}</td>
+                <td>{{i.age}}</td>
+                <td>{{i.gender}}</td>
+                <td> <a href="{% url 'delete_doctor' i.id %}" onclick="return confirm('Are u really want to delete!')" class="btn btn-danger">Delete</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+
+</div>
+
+{% endblock %}

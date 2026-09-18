@@ -1,0 +1,46 @@
+{% extends 'navigation_bar.html' %}
+
+{% load static %}
+
+{% block body %}
+
+<link rel="stylesheet" href="{% static 'css/appointment.css' %}">
+
+<div class="container mt-5">
+
+    <h2 class="text-center">View Appointments</h2>
+
+    <table class="table table-bordered table-hover" id="example">
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Doctor</th>
+                <th>Patient</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+        {% for i in app %}
+            <tr>
+                <td>{{ i.id }}</td>
+                <td>{{ i.doctor }}</td>
+                <td>{{ i.patient }}</td>
+                <td>{{ i.date }}</td>
+                <td>{{ i.time }}</td>
+                <td>{{ i.status }}</td>
+            </tr>
+        {% endfor %}
+
+        </tbody>
+
+    </table>
+
+</div>
+
+{% endblock %}
+

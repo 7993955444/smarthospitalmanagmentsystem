@@ -1,0 +1,70 @@
+{% extends 'navigation_bar.html' %}
+{% block body %}
+
+<div class="container mt-5">
+    <div class="row align-items-center">
+
+        <div class="col-md-6">
+            <h1 class="display-4 fw-bold text-primary">
+                Smart Hospital Management System
+            </h1>
+
+            <p class="lead">
+                <b>"Your Health, Our Priority"</b>
+            </p>
+
+            <p>
+                Welcome to our Smart Hospital Management System. We provide
+                quality healthcare services with experienced doctors,
+                online appointment booking, patient record management,
+                and efficient hospital administration.
+            </p>
+
+            <a href="{% url 'login' %}" class="btn btn-primary btn-lg">
+                Book Appointment
+            </a>
+        </div>
+
+        <div class="col-md-6 text-center">
+            <img src="/static/images/hospitalproject2.jpg"
+                 class="img-fluid rounded shadow"
+                 alt="Hospital">
+        </div>
+
+    </div>
+
+    <hr class="my-5">
+
+    <div class="row text-center">
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h4>👨‍⚕️ Expert Doctors</h4>
+                    <p>Experienced specialists providing quality healthcare.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h4>📅 Online Appointments</h4>
+                    <p>Book doctor appointments anytime with ease.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h4>🩺 Patient Records</h4>
+                    <p>Securely manage patient information and medical history.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

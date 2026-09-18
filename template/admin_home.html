@@ -1,0 +1,47 @@
+{% extends 'navigation_bar.html' %}
+
+{% block body %}
+
+<div class="container" style="margin-top:50px">
+
+    <h2 align="center">Admin Dashboard</h2>
+
+    <br><br>
+
+    <div class="row">
+
+        <!-- Doctors -->
+        <div class="col-md-4">
+            <div class="card bg-primary text-white shadow">
+                <div class="card-body text-center">
+                    <h4>Total Doctors</h4>
+                    <h1>{{ doctor_count }}</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Patients -->
+        <div class="col-md-4">
+            <div class="card bg-success text-white shadow">
+                <div class="card-body text-center">
+                    <h4>Total Patients</h4>
+                    <h1>{{ patient_count }}</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Appointments -->
+        <div class="col-md-4">
+            <div class="card bg-danger text-white shadow">
+                <div class="card-body text-center">
+                    <h4>Total Appointments</h4>
+                    <h1>{{ appointment_count }}</h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
